@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agiotas INC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-background">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo do Site">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-container">
+        <section id="home">
+            <img src="imagem_principal.jpg" alt="Imagem Principal">
+            <h1>Bem-vindo ao site de agiotagem Online</h1>
+            <p>Este é um site onde o/a senhor(a) poderá fazer empréstimos com pessoas desconhecidas.</p>
+            <div class="form-container">
+                <button id="getDataButton">Obter Dados</button>
+                <div id="responseData" style="display: none;"></div>
+            </div>
+        </section>
+        
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma equipe dedicada unicamente em agiotas de todos os países.</p>
+        </section>
+        
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Agiotagem</li>
+                <li>Jogo do bicho</li>
+                <li>Empréstimos</li>
+                <li>Cobranças</li>
+            </ul>
+        </section>
+        
+        <section id="contato">
+            <h2>Entre em Contato, por sua conta e risco.</h2>
+            <form action="submit.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Agiotas INC. Todos os direitos emprestados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
